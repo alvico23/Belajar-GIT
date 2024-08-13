@@ -1,17 +1,99 @@
-<table>
-    <tr>
-      <th 
-  >Name</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-  </table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #ffe6cc;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .navigation {
+            background-color: #e0f2ff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .content {
+            background-color: #ffe0e0;
+            padding: 40px;
+        }
+
+        .sidebar {
+            background-color: #e0ffe0;
+            padding: 40px;
+        }
+
+        .footer {
+            background-color: #ffe6cc;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" class="header">HEADER</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" class="navigation">NAVIGASI</th>
+            </tr>
+            <tr>
+                <td class="content">
+                    <div class="container">
+                        <h2>Heading 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur 
+                        <P></P>   adipisicing elit, sed do eiusmod tempor 
+                        <P></P>    incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </td>
+                <td class="sidebar">
+                    <div class="container">
+                        <h3>Menu:</h3>
+                        <ul>
+                            <li>Home</li>
+                            <li>Berita</li>
+                            <li>Layanan</li>
+                            <li>Kontak</li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" class="footer">FOOTER</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
