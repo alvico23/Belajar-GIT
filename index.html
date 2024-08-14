@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LatihanWeb01</title>
     <style>
         body {
             margin: 0;
@@ -11,89 +11,96 @@
         }
 
         table {
-            width: 80%;
-            border-collapse: collapse;
+            width: 50%; /* Mengatur lebar tabel */
+            border-collapse: collapse; /* Menghapus jarak antar sel */
+            margin-bottom: 0%; /* Jarak bawah antar tabel */
         }
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        .container {
-            padding: 20px;
+        td {
+            padding: 5px;  /* Untuk jarak tebal row nya */
+            text-align: center;
+            vertical-align: top; /* Memastikan konten berada di atas */
+            border: 1px solid #ccc; /* Menambahkan garis tepi pada tabel */
         }
 
         .header {
             background-color: #ffe6cc;
-            text-align: center;
-            padding: 20px;
+            
         }
 
-        .navigation {
-            background-color: #e0f2ff;
-            text-align: center;
-            padding: 10px;
+        .nav {
+            background-color: #e6f2ff;
         }
 
-        .content {
-            background-color: #ffe0e0;
-            padding: 40px;
+        .main-content {
+            background-color: #ffe6e6;
+            text-align: left;
         }
 
         .sidebar {
-            background-color: #e0ffe0;
-            padding: 40px;
+            background-color: #e0ffe6;
+            text-align: left;
         }
 
         .footer {
             background-color: #ffe6cc;
-            text-align: center;
-            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <table>
-        <thead>
+
+    <header>
+        <table class="header">
             <tr>
-                <th colspan="2" class="header">HEADER</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th colspan="2" class="navigation">NAVIGASI</th>
-            </tr>
-            <tr>
-                <td class="content">
-                    <div class="container">
-                        <h2>Heading 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur 
-                        <P></P>   adipisicing elit, sed do eiusmod tempor 
-                        <P></P>    incididunt ut labore et dolore magna aliqua.
-                    </div>
-                </td>
-                <td class="sidebar">
-                    <div class="container">
-                        <h3>Menu:</h3>
-                        <ul>
-                            <li>Home</li>
-                            <li>Berita</li>
-                            <li>Layanan</li>
-                            <li>Kontak</li>
-                        </ul>
-                    </div>
+                <td>
+                    <p style="padding: 10px;">HEADER</p>
                 </td>
             </tr>
+        </table>
+    </header>
+
+    <nav>
+        <table class="nav">
             <tr>
-                <th colspan="2" class="footer">FOOTER</th>
+                <td>
+                    <p>NAVIGASI</p>
+                </td>
             </tr>
-        </tbody>
-    </table>
+        </table>
+    </nav>
+
+    <section>
+        <table class="content">
+            <tr>
+                <td class="main-content" style="width: 75%; ">
+                    <h1>Heading 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur </p>
+                     <p>adipiscing elit, sed do eiusmod tempor </p>
+                     <p>incididunt ut labore et dolore magna aliqua.</p>
+                     
+                </td>
+                <td class="sidebar" style="width: 25%;">
+                    <p>Menu:</p>
+                    <ul>
+                        <li>Home</li>
+                        <li>Berita</li>
+                        <li>Layanan</li>
+                        <li>Kontak</li>
+                        <p style="padding:30px"></p>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <table class="footer">
+            <tr>
+                <td>
+                    <p>FOOTER</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
 </body>
 </html>
